@@ -1,0 +1,138 @@
+@font-face {
+font-family: "Aileron";
+src: url("../fonts/Aileron.otf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Aileron";
+}
+
+body{
+  background: linear-gradient(#FFC9E7, #A3E4FF);
+  height: 100vh;
+}
+
+.login_input_lbl, .login_title{
+  color: #ccc;
+}
+.alert{
+  color: #d15a5a;
+}
+
+
+.login_parent{
+
+  overflow: hidden;
+  background-color: #4c4c53;
+  box-shadow: 0px 0px 15px grey;
+  width: 30vw;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.login_form{
+  margin-top: 10px;
+}
+
+.login_form input{
+  margin: 5px 0;
+  padding: 5px 0;
+  outline: none;
+  border: 1px solid grey;
+}
+
+.login_form input:focus{
+  background-color: lightblue;
+  border-color: blue;
+}
+
+.login_btn{
+  box-shadow: 0 0 5px rgba(255,255,255,0.2);
+  margin: 2vw;
+  border: none;
+  padding: 1vw;
+  background-color: #ccc;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+}
+
+.login_pic{
+  margin: 2vw auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 100%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .login_parent{
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login_parent{
+    width: 60vw;
+    font-size: 2em;
+  }
+  .login_form input{
+    width: 30vw;
+    font-size: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .login_parent{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  .login_pic{
+    display: none;
+  }
+  .login_form input{
+    width: 60vw;
+    font-size: 1em;
+  }
+  .login_title{
+    margin-top: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+  body, .login_parent{
+    min-width: 260px;
+  }
+  .login_form input{
+    width: 80vw;
+    font-size: 1em;
+  }
+  .login_title{
+    font-size: 1em;
+    padding-bottom: 10px;
+  }
+  .login_btn{
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+}
+
+
+@media only screen and (max-width: 260px) {
+  body{
+    background: none;
+  }
+  .login_form input{
+    width: 100%;
+    font-size: 1em;
+  }
+}

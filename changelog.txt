@@ -1,0 +1,231 @@
+0.01:
+// can add posts to albums
+// dropdown menu works
+// display works on backend and single.php pages
+// can now change images
+// can upload covers to albums
+// can now reupload the ablum cover image
+
+
+0.02:
+// fixed album edit
+// fix posts edit
+// error messages for post edit
+// creating posts fixed
+// error messages for album creation
+// sidebar in its own file
+// css for error messages
+
+0.03:
+// can delete ablums
+// all posts that are in an album that is deleted are removed from the album
+// can change the profile image in the general settings
+// can change the background image in the general settings
+// can change title and subtitle in the general settings
+// general settings set up
+
+
+0.04:
+// able to see how many posts are in ablum on album view
+// able to list posts within an album
+// message if the table is empty, prompting user to make a post and assign it to this album
+// changed up general settings so that they are all on the same page
+// a link between the album details and the album edit page
+// ALL OF THE EDIT PAGES USE ONE SUBMIT BUTTON INSTEAD OF TWO
+// error messages work on album cover update
+// error messages work for edit general settings
+// error messages work for edit post
+
+
+0.05:
+// fix tables up so they dont have category columns
+// deleting all content works and doesn't cause any errors
+// messages to confirm deleting posts, posts within albums, and albums
+// deletion messages display the name of the post or album that was deleted
+// display the description on the album details page
+// backend "could not find" page
+// working errors for notfound page
+
+0.06:
+// button to create post on post list
+// button to create album on album list
+// delete button's styling
+// titles not centered within the form_table
+// 'view all posts in this album' button in the edit album page
+// 'edit album' button in the album details page
+//  button colors now sorted out
+// backend album details displays album cover
+// album button shows if post is in an album in backend posts list
+// 'back to album view' button shows if post is in album in backend_edit_post.php
+
+0.07:
+// added basic front end view all albums page
+// added basic front end view all posts page
+// added basic front end album single page
+// added basic links to new pages on the header sidebar
+// front end 404 page
+// backend button for viewing front end of post
+// backend button for viewing front end of album
+// header lists all of the albums and recent posts
+// fixed problem with single.php with / in url
+
+0.08:
+// Added burger menu that is fully functional
+// burger menu becomes an "X" if the button is clicked
+// burger menu can close and open when the page width is small enough
+// sidebar will automatically close if a new page is loaded
+// form_table is now responsive and looks good on all screens
+// album view has been reworked for smaller screens
+// buttons on the tables listing out posts/albums now display in a column, much nicer for smaller screens
+// login screen now responsive
+
+
+0.09:
+// if the id given for featured image is 0, should not display
+//if id given for featured image does not match a post, should also not display
+//backend: select featured images capability
+//have a drop-down menu for featured images, just like the one for albums in edit posts
+// featured image links working
+// if the post is deleted then unassign the featured image in pref and reset it back to 0
+// front page basic design layout
+// make sure the database is set up for homepage data
+// make sure that all of the home page elements grab their data from the database
+
+0.10:
+//fix images appearing too small in height or width because of aspect ratio in the display pages(e.g. all posts)
+//also found a way of stopping too much text altering the grid, as this messed with the image size (as the grid is made bigger by the text, so the image gets longer in height)
+//fixed the thumbnails on the featured images so they appear like the ones on all posts
+//limited the amout of text displayed on the all albums page for the description and title
+//limited the size of the title and description for the posts and ablum on the backend inputs
+//fixed up styling on frontend homepage
+// added line design to section headers
+// made sure that the page looks good in all configurations of the home page galleries (featured images and recent posts)
+//if there is no about section text, don't display about me area
+//if there is no link for one of the social links, dont display the button in question
+//added a minimum length for about section
+// made a message for if there are no posts in the all posts page
+// made a message for if there are no posts on the FRONTEND of the album single page
+// made a message for if there are no albums in the all albums
+// tested no posts found message on all posts page
+// tested no albums found message on all albums page
+// added max and min length for post/album title and desc
+// added "required" to all required inputs
+// cleaned up the uploads folder
+
+0.11:
+// removed oopsies from backend index
+// moved the homepage options from general settings into their own page
+// some light refactoring of the backend php code, it still needs major work tho
+// all pages that use dynamic content redirect if the id given does not match an item in the database
+// removed oopsies from/fixed titles for all backend pages
+// removed the database errormessage areas that were scattered around everywhere
+// added a new dberror page for if there is an issue with the db
+// added spooky styling to the dberror page
+// add styling to number counters and dropdown areas
+// styled the input boxes for the whole backend
+// added some icons next to the labels for each option
+// updated the image upload buttons for pages
+// fixed the general settings label going slightly over in the backend sidebar
+// added basic about page to backend
+
+0.11.1:
+// minor fix, upload file is no longer required when updating in edit post/album
+// fixed up the album details page
+// fixed the upload buttons for files not displaying the label that shows "no file chosen"
+// added a min-width to actions colomn on the posts/albums tables
+// made the tables on the backend more responsive in general
+
+0.11.2:
+// made it so there is a checkbox for each of the sections that can be disabled
+// if disabled text areas do not need to be filled in
+// made it not manditory to have a email, facebook or instagram
+
+0.11.3:
+// styled checkboxes	
+// made it so if checkbox is disabled it won't display frontend button
+
+0.11.4:
+// renamed all backend files to have standard naming convention
+
+0.12.0:
+// Added button which adds and removes classes based upon whether the sidebar is closed or open
+// fixed social button colors
+// added animations to the homepage using AOS library
+// rejigged the homepages css layout
+// fixed issue with the subtitles not being centered
+// added shadow to profile pic
+// The homepage now is responsive in terms of zooming out, now just need to make it mobile friendly
+
+0.12.1:
+// Mobile version of the header added
+// mobile header covers more of the screen and is adapted to mobile use
+// Mobile Version of the Home Screen added
+// header now overlays the main content on smaller mobile screens
+// Added styling for 4k displays
+// Fixed the styling on the Main Links
+
+0.12.2:
+// added shadows to the header in mobile styles
+// BACKEND: social checkboxes appeared over the topbar, fixed their z-indexs
+// ALL POSTS PAGE works and looks good on all resolutions
+// fixed issue with upload scripts max size being set to 4mb instead of 4gb
+// ALL ALBUMS PAGE works and looks good on all resolutions
+// Added a container that helps space out the alb_area and the gal_area pages
+// fixed issue with multiple albums on all albums page
+// SINGLE POST PAGE works and looks good on all resolutions
+// single page restyled
+// single page now has "go to ablum" button if post is in album
+// SINGLE ALBUM PAGE works and looks good on all resolutions
+// title_area styling fixed, no longer fixed to vh and now responsive
+
+0.13.0:
+// working pagination on all backend pages
+// working pagination on all frontend pages
+
+0.13.1:
+// Fixed the limit on results per page being set to 2 for all pages
+// Added back link to backend if logged in
+// added pagination styling
+// Fixed issue with moblie page loading with menu open
+
+0.14.1:
+// added search results page
+// added search functionality (for posts)
+// added search functionality (for albums)
+// added search results page split between albums and posts
+// made sure that it searches both through the description and the title
+// made sure that it searches regardless of case
+
+0.14.2:
+// Fixed up styling of search page
+// Fixed up pagination styling and made it look good in all situations
+// slight fix with the text that appears when you hover over a post
+// fixed up footers on all pages, made sure they are includes instead of pastes
+// added site icon
+
+0.15:
+// Added new constants and replaced all the old static values with these constants in the frontend
+// Swapped over the old $db variable to use PDO, and renamed it $pdo
+// PDO implemented on the frontend pages
+// Added error message capablitiy to the 404 page on the frontend
+// Wrote out all of the documentation for the config files constants
+
+//1.0:
+// go through and remove any old unwanted content from the project
+// Maybe change the comments on the config.php file to be just above each option, instead of in a massive chunk at the top	
+// get rid of all of the $PREF_ variables, as they are unecessary and confusing
+// fixed title/subtitle (got my _get and _post mixed up)
+// new error messgae system using functions
+// new functions to reduce the amount of code on the backend
+// completely finished off backend index
+// done homepage settings
+// Featured images work if you select none
+// recent posts can be reset to any other value	
+// social links work	
+// header messages have their own php file
+// all albums page on the backend now works and can delete albums
+// all posts page on the backend now works and can delete posts
+// fixed up backend 404 page and added error message functionality to it
+// fixed up error with album details page, throwing error when deleting post (syntax error within the query)
+// post edit page fully works
+// tested if the no posts/albums backend message displays properly
