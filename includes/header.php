@@ -14,7 +14,6 @@ if(!$title) {$title = $pref->{SETTINGS_TITLE};}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--<script defer src="/astragal/fa/js/all.js"></script> --> <!--load all styles -->
   <link rel="stylesheet" href="/fa/css/all.css">
   <link rel="icon" href="img/uploads/pref/<?php echo $pref->{SETTINGS_PROFILE_IMAGE_LOCATION}; ?>">
   <script src="includes/jquery.min.js" charset="utf-8"></script>
@@ -100,9 +99,9 @@ if(!$title) {$title = $pref->{SETTINGS_TITLE};}
 
 
     <ul class="main_links">
-      <li class="main_link_header_li"><a class="main_link_header" href="/astragal/home.php">HOME</a></li>
-      <li class="main_link_header_li"><a class="main_link_header" href="list_posts.php">POSTS</a></li>
-      <li class="main_link_header_li"><a class="main_link_header" href="list_albums.php">ALBUMS</a></li>
+      <li class="main_link_header_li"><a class="main_link_header" href="/home.php">HOME</a></li>
+      <li class="main_link_header_li"><a class="main_link_header" href="/list_posts.php">POSTS</a></li>
+      <li class="main_link_header_li"><a class="main_link_header" href="/list_albums.php">ALBUMS</a></li>
     </ul>
 
 

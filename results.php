@@ -166,7 +166,7 @@ include_once ("includes/header.php");
         echo "<h3 class='ResultsBanner'>Albums</h3>";
         foreach ($albums as $row){
           ?>
-          <a class="album_link" href="single.php?post=<?php echo $row->{CATEGORY_ID}; ?>">
+          <a class="album_link" href="album_single.php?post=<?php echo $row->{CATEGORY_ID}; ?>">
             <div class="album_link_img" style="background-image: url('img/uploads/album_covers/<?php echo $row->{CATEGORY_FILENAME}; ?>');" alt="<?php echo $row->{CATEGORY_TITLE}; ?>"> </div>
             <div class="album_link_text">
               <h2 class="album_link_name"> <?php echo $row->{CATEGORY_TITLE}; ?> </h2>

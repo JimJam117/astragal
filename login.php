@@ -52,9 +52,9 @@ if(isset($_POST['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="/astragal/fa/js/all.js"></script> <!--load all styles -->
-    <link rel="stylesheet" href="/astragal/fa/css/all.css">
+    <link rel="stylesheet" href="fa/css/all.css">
 
-    <link type="text/css" rel="stylesheet" href="/astragal/css/login_style.css">
+    <link type="text/css" rel="stylesheet" href="css/login_style.css">
     <title>Astra London</title>
 </head>
 <body>
@@ -91,7 +91,7 @@ if(isset($_POST['login'])) {
             <input name="password" type="password" class="login_input" id="exampleInputPassword3" placeholder="Password">
         </div>
         <br>
-        <a class="login_btn" href="/astragal/home.php">Back to home</a>
+        <a class="login_btn" href="/home.php">Back to home</a>
         <button name="login" type="submit" class="login_btn">Sign in</button>
 
 </div>

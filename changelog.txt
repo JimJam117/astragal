@@ -141,7 +141,7 @@
 // made it not manditory to have a email, facebook or instagram
 
 0.11.3:
-// styled checkboxes	
+// styled checkboxes
 // made it so if checkbox is disabled it won't display frontend button
 
 0.11.4:
@@ -212,7 +212,7 @@
 
 //1.0:
 // go through and remove any old unwanted content from the project
-// Maybe change the comments on the config.php file to be just above each option, instead of in a massive chunk at the top	
+// Maybe change the comments on the config.php file to be just above each option, instead of in a massive chunk at the top
 // get rid of all of the $PREF_ variables, as they are unecessary and confusing
 // fixed title/subtitle (got my _get and _post mixed up)
 // new error messgae system using functions
@@ -220,8 +220,8 @@
 // completely finished off backend index
 // done homepage settings
 // Featured images work if you select none
-// recent posts can be reset to any other value	
-// social links work	
+// recent posts can be reset to any other value
+// social links work
 // header messages have their own php file
 // all albums page on the backend now works and can delete albums
 // all posts page on the backend now works and can delete posts
@@ -229,3 +229,11 @@
 // fixed up error with album details page, throwing error when deleting post (syntax error within the query)
 // post edit page fully works
 // tested if the no posts/albums backend message displays properly
+
+1.01:
+// Fixed issues with links to css/js, as well as general issues with url links, some of which due to use of \ instead of /, some due to incorrect paths
+// There was an issue with uploading to the database, whilst deleting and getting information worked fine. In the end I discovered that this was due to there being too many columns in the table I was trying to upload to that were not being set. This was fixed by removing the unused columns.
+//Front end header links were using old weird paths, this was fixed
+//Front end album details page styling was broken, this was fixed
+//Login styling was broken, this was fixed
+//404 styling was broken, this was fixed

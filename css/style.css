@@ -594,6 +594,7 @@ body{
 .album_single_container{
   min-height: 100vh;
   background-color: white;
+  width: 100%;
 }
 .album_single_area{
   width: 100%;

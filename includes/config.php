@@ -20,9 +20,9 @@ define("DB_NAME", "astragal");
 /////////////////////////////////////////////////////////
 ### DEFINE APP DETAILS ###
 /////////////////////////////////////////////////////////
-$APPNAME = "JimjamBlog";
+$APPNAME = "astragal";
 $APPAUTHOR = "James Sparrow";
-$APPVERSION = "0.15";
+$APPVERSION = "1.01";
 $APPAUTHORADDRESS = "https://www.jsparrow.uk";
 
 /////////////////////////////////////////////////////////
