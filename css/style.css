@@ -347,7 +347,7 @@ body{
 }
 
 .homePageSectionBk{
-  background-color: #fff;
+  background-color: #e1e1e1e0;
   min-height: 200px;
 }
 
@@ -397,14 +397,12 @@ body{
   overflow: hidden;
   margin: 1em 0.4em;
   background: #ffffff;
-  border: 2px solid #bababa;
   border-radius: 0;
-  box-shadow: 0 0 16px 0px grey;
+  box-shadow: 0 6px 16px 0px grey;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   transition: 0.2s;
-  padding: 10px;
 }
 .album_link:hover{
   box-shadow: 0 0 0px 0px #ccc6c6;
@@ -545,7 +543,7 @@ body{
 .gal_area_container{
   padding: 2em;
   padding-bottom: 0;
-  background-color: white;
+  background-color: #e1e1e1e0;
   width: 100%;
   min-height: 100vh;
 }
@@ -553,20 +551,18 @@ body{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-auto-rows: 15vw;
-  background-color: white;
   width: 100%;
 }
 .alb_area_container{
   padding: 2em;
   padding-bottom: 0;
-  background-color: white;
+  background-color: #e1e1e1e0;
   width: 100%;
   min-height: 100vh;
 }
 .alb_area{
   display: grid;
   grid-template-columns: 100%;
-  background-color: white;
   width: 100%;
 }
 
@@ -593,7 +589,7 @@ body{
 /*Album Single*/
 .album_single_container{
   min-height: 100vh;
-  background-color: white;
+  background-color: #e1e1e1e0;
   width: 100%;
 }
 .album_single_area{
@@ -632,7 +628,6 @@ body{
   text-align: center;
   justify-content: center;
   padding: 20vh 0px;
-  background-color: white;
   width: 100%;
   height: 40vh;
 }
@@ -650,7 +645,7 @@ body{
   margin-top: 5vh;
 }
 .mainLinksSection_div{
-  margin: 0 20px;
+  margin: 1em;
   padding: 20px;
   background-color: white;
   box-shadow: 0 3px 10px 0px grey;
@@ -760,7 +755,7 @@ body{
 
 .frontend_pagination_container{
   padding-bottom: 0;
-  background-color: white;
+  background-color: #e1e1e1e0;
   width: 100%;
   text-align: center;
   font-family: "Aileron";
@@ -808,7 +803,7 @@ body{
 .footer
 {
   font-family: "Aileron";
-  background-color: white;
+  background-color: #e1e1e1e0;
   text-align: center;
   padding: 2em 0;
 }
@@ -918,12 +913,12 @@ body{
   .image_link{
     margin: 0.5em;
   }
-
+  .mainLinksSection{
+          flex-direction: column;
+  }
+    
   .mainLinksSection_div i{
     font-size: 6em;
-  }
-  .mainLinksSection_div p{
-    display: none;
   }
 
   .burgerMenuClosed{
