@@ -6,15 +6,15 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$dir = "/home/jamessparrow101/public_html/portfolio.london24racing.com";
+$dir = "/var/www/astragal";
 define('ROOTPATH', __DIR__);
 
 /////////////////////////////////////////////////////////
 ### DEFINE DATABASE CONNECTION DETAILS ###
 /////////////////////////////////////////////////////////
 define("DB_HOST", "localhost");
-define("DB_USER", "Gqcq6R7z4oZHkK");
-define("DB_PASS", "CxNo)N5!J]y_");
+define("DB_USER", "root");
+define("DB_PASS", "");
 define("DB_NAME", "astragal");
 
 /////////////////////////////////////////////////////////

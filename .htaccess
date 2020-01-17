@@ -1,4 +1,2 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://portfolio.london24racing.com/ [R=301,L]
