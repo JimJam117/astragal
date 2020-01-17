@@ -283,8 +283,14 @@ body{
   overflow-anchor: visible;
 }
 
+.landingPage h1{
+    font-weight: 100;
+}
+
 .landingPage p{
   margin-bottom: 2em;
+  font-weight: 100;
+  font-size: x-large;
 }
 
 

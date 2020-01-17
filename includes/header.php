@@ -14,7 +14,7 @@ if(!$title) {$title = $pref->{SETTINGS_TITLE};}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/fa/css/all.css">
+  <link rel="stylesheet" href="fa/css/all.css">
   <link rel="icon" href="img/uploads/pref/<?php echo $pref->{SETTINGS_PROFILE_IMAGE_LOCATION}; ?>">
   <script src="includes/jquery.min.js" charset="utf-8"></script>
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -64,7 +64,7 @@ if(!$title) {$title = $pref->{SETTINGS_TITLE};}
   }
   </script>
 
-  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
   <title><?php echo "$title"; ?></title>
 </head>
 
