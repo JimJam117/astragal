@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
   }
 }
 
-$title = "Create Post";
+$title = "Edit Album";
 include_once "includes/backend_header.php";
 include_once "includes/backend_sidebar.php";
 
@@ -103,8 +103,8 @@ $p = $stmt->fetch();
 
         <tr class="form-group">
           <td><h3 class="sub-header"><i class="fas fa-pen"></i> Album Description</h3>
-            <p>Enter a description of the album here (max 3000 characters).</p>
-            <textarea required minlength="10" maxlength="3000" style="min-height: 200px" id="mytextarea" class="form-control" name="desc"><?php echo $p->{CATEGORY_DESCRIPTION}?></textarea></td>
+            <p>Enter a description of the album here (max 30,000 characters).</p>
+            <textarea required minlength="10" maxlength="30000" style="min-height: 200px" id="mytextarea" class="form-control" name="desc"><?php echo $p->{CATEGORY_DESCRIPTION}?></textarea></td>
         </tr>
 
 
@@ -139,6 +139,26 @@ $p = $stmt->fetch();
 
 
     </div>
+
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+
+<script>
+  var editor_config = {
+    forced_root_block : false,
+    path_absolute : "/",
+    selector: "textarea",
+    plugins: [
+      "advlist autolink lists link charmap print preview hr anchor pagebreak",
+      "searchreplace wordcount visualblocks visualchars code fullscreen",
+      "insertdatetime media nonbreaking save table contextmenu directionality",
+      "emoticons template paste textcolor colorpicker textpattern"
+    ],
+    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link",
+    relative_urls: false,
+    
+  };
+  tinymce.init(editor_config);
+</script>
 
   </body>
   </html>

@@ -6,23 +6,23 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$dir = "/var/www/astragal";
+$dir = "/home/jamessparrow101/public_html/portfolio.london24racing.com";
 define('ROOTPATH', __DIR__);
 
 /////////////////////////////////////////////////////////
 ### DEFINE DATABASE CONNECTION DETAILS ###
 /////////////////////////////////////////////////////////
 define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "password");
+define("DB_USER", "Gqcq6R7z4oZHkK");
+define("DB_PASS", "CxNo)N5!J]y_");
 define("DB_NAME", "astragal");
 
 /////////////////////////////////////////////////////////
 ### DEFINE APP DETAILS ###
 /////////////////////////////////////////////////////////
-$APPNAME = "astragal";
+$APPNAME = "astralondon.me";
 $APPAUTHOR = "James Sparrow";
-$APPVERSION = "1.01";
+$APPVERSION = "";
 $APPAUTHORADDRESS = "https://www.jsparrow.uk";
 
 /////////////////////////////////////////////////////////

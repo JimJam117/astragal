@@ -70,30 +70,58 @@ include_once ("includes/header.php");
 
     <!--ALBUM-->
     <p class="detail">
-      Album:
       <?php // display album name
 
-      // if there is no album
-      if ($row->Gal_This_Post_Album_ID == 0) {
-        echo "No Album";
-      }
-
       // if there is an album
-      else{
+      if ($row->Gal_This_Post_Album_ID != 0) {
         // Find the album name and echo it
         $cat_stmt = $pdo->prepare("SELECT * FROM " . CATEGORIES_TABLE . " WHERE " . CATEGORY_ID . "= :cat_id");
         $cat_stmt->bindParam(':cat_id', $row->{POST_CATEGORY_ID}, PDO::PARAM_INT);
         $cat_stmt->execute();
         $cat_row = $cat_stmt->fetch();
-        echo $cat_row->{CATEGORY_TITLE};
+        
+        echo(' This post is a part of the album
+        <a href="album_single.php?post=' . $cat_row->{CATEGORY_ID} . '">' .
+            $cat_row->{CATEGORY_TITLE} .
+        '</a>');
       }
       ?>
     </p>
 
     <!--DESCRIPTION-->
-    <p class="single_desc"> <?php echo($row->{POST_DESCRIPTION}); ?> </p>
+    <div class="single_desc"> <?php echo($row->{POST_DESCRIPTION}); ?> </div>
 
   </div>
 </div>
 
-<?php include("includes/footer.php"); ?>
+
+<div class="footer" style="background: white;">
+
+  <hr>
+  <br>
+  <?php
+
+  $pref = $pdo->query("SELECT * FROM " . SETTINGS_TABLE . " WHERE " . SETTINGS_PROFILE_ID . " = 1");
+  $pref = $pref->fetch();
+
+  $EmailIsDisplaying = true;
+  if(empty($pref->{SETTINGS_EMAIL}) || $pref->{SETTINGS_IS_EMAIL_ENABLED} == "0"){ $EmailIsDisplaying = false; }
+  else{ $EmailIsDisplaying = true; }
+
+
+  if($EmailIsDisplaying) {
+    echo $pref->{SETTINGS_EMAIL};
+    echo " <br><br> <a href='$APPAUTHORADDRESS'> $APPNAME $APPVERSION by $APPAUTHOR </a>";
+  }
+  else {
+    echo "<a href='$APPAUTHORADDRESS'> $APPNAME $APPVERSION by $APPAUTHOR </a>";
+  }
+  ?>
+
+</div>
+
+</div> <!--MAIN CONTENT END-->
+
+</body>
+</html>
+

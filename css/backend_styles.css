@@ -7,6 +7,7 @@
   src: url("fonts/Aileron.otf");
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -45,6 +46,7 @@ html, body{
   height: 100px;
   background-color: #4e276c;
   position: fixed;
+  z-index: 1; 
 
 
 }
@@ -244,7 +246,6 @@ th, td {
 .number_input{
   font-size: 20px;
   min-width: 1em;
-  height: 2em;
   text-align: center;
   padding: 1em 0em;
   border: 1px solid black;

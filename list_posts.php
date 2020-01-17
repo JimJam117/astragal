@@ -64,7 +64,7 @@ include_once ("includes/header.php");
           <div class="filter">
             <?php
             ?> <h2 class="name"> <?php echo $row->{POST_TITLE}; ?> </h2> <?php
-            ?> <p class="desc"> <?php echo $row->{POST_DESCRIPTION}; ?> </p>
+            ?> 
           </div>
         </a>
       <?php } // foreach end ?>

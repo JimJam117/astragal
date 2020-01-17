@@ -21,7 +21,6 @@
 
 *{
   text-decoration: none;
-  font-weight: 100;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +32,7 @@ input:focus, button:focus{
 
 
 a, a:visited{
-  color: black;
+  color: #1b1b46d1;
 }
 
 
@@ -465,6 +464,15 @@ body{
   min-height: 80vh;
 
 }
+
+.detail{
+  font-style: italic;  
+}
+
+iframe{
+    max-width: 100%;
+}
+
 .single a{
 
 }
@@ -602,10 +610,11 @@ body{
   text-align: center;
 }
 .album_single_desc{
-  padding: 1em 1em 1em 2em;
+  padding: 1em;
+  width: 60%;
 }
 .album_single_area img{
-  max-width: 40vh;
+  max-width: 30%;
   margin:1em 0 2em 0;
 }
 .album_posts_section_header{
@@ -647,8 +656,6 @@ body{
 .mainLinksSection_div{
   margin: 1em;
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 3px 10px 0px grey;
   transition: 0.2s;
 }
 
@@ -809,7 +816,6 @@ body{
 }
 
 
-
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width:2150px) {
@@ -889,7 +895,7 @@ body{
   }
   /*album single page*/
   .album_single_area img {
-    width: 60vw;
+    max-width: 60vw;
   }
 
   /*All albums list page*/
@@ -989,6 +995,9 @@ body{
   .album_link_name {
     font-size: 1em;
   }
+  .album_single_desc{
+      width: 80%;
+  }
 }
 
 @media only screen and (max-width:500px) {
@@ -1000,7 +1009,7 @@ body{
 
   /*album single page*/
   .album_single_area img {
-    width: 75vw;
+    max-width: 75vw;
   }
 
   /*All albums list page*/
@@ -1037,7 +1046,7 @@ body{
 @media only screen and (max-width:400px) {
   /*album single page*/
   .album_single_area img {
-    width: 85vw;
+    max-width: 85vw;
   }
   .name_album_single{
     font-size: 0.7em;

@@ -68,7 +68,7 @@ include_once ("includes/header.php");
   <div class="album_single_container">
   <div class="album_single_area">
     <img src="img/uploads/album_covers/<?php echo($row->{CATEGORY_FILENAME});?>">
-    <p class="album_single_desc"><?php echo($row->{CATEGORY_DESCRIPTION});?></p>
+    <div class="album_single_desc"><?php echo($row->{CATEGORY_DESCRIPTION});?></div>
   </div>
   <div class="album_posts_section_header">
     <?php
@@ -104,7 +104,6 @@ include_once ("includes/header.php");
         <div class="filter">
           <?php
           ?> <h2 class="name name_album_single"> <?php echo $post_row->{POST_TITLE}; ?> </h2> <?php
-          ?> <p class="desc"> <?php echo $post_row->{POST_DESCRIPTION}; ?> </p> <?php
           ?>
         </div>
         </a>

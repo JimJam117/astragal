@@ -86,9 +86,7 @@ function FeaturedImageDisplay($FeaturedImageInput, $pdo_obj) {
         <div class="filter">
           <?php
           ?> <h2 class="name"> <?php echo $post->{POST_TITLE}; ?> </h2> <?php
-          ?> <p class="desc"> <?php echo $post->{POST_DESCRIPTION}; ?> </p> <?php
-
-          ?></div></a><?php
+          ?> </div></a><?php
         }
       }
     }
@@ -167,9 +165,7 @@ function FeaturedImageDisplay($FeaturedImageInput, $pdo_obj) {
                     <div class="filter">
                       <?php
                       ?> <h2 class="name"> <?php echo $row->{POST_TITLE}; ?> </h2> <?php
-                      ?> <p class="desc"> <?php echo $row->{POST_DESCRIPTION}; ?> </p> <?php
-
-                      ?></div></a><?php
+                      ?>  </div></a><?php
                     }
                   }
                   ?>
